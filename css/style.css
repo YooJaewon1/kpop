@@ -1,0 +1,537 @@
+<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif; }
+		@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{padding:0; margin: 0}
+
+body, h1, h2, h3, img, p{margin:0; letter-spacing: -0.05rem}
+
+header, section, footer{}
+
+
+div {width:1100px; margin:0 auto;}
+
+h1{font-family: 'LOTTERIACHAB'; font-weight: 100;
+	line-height: 1.1;
+	font-size: 5rem}
+p{font-family: 'GmarketSans'; font-weight: 300;
+	letter-spacing: -0.13rem;}
+h2{font-family: 'LOTTERIACHAB'; font-weight: 100;
+	font-size: 3rem	}
+h3{font-family: 'GmarketSans'; font-weight: 300;
+	line-height: 1.8;
+	font-size: 1.2rem}
+h4{font-family: 'GmarketSans'; font-weight: 300}
+
+img{max-width: 100%}
+button{font-family:'GmarketSans'; font-weight: 500;
+	letter-spacing: -0.13rem;
+	font-size: 1.5rem;
+	color: var(--purple)}
+
+
+/* ------------------------ */
+
+div.top {height: 750px;
+		justify-content: center;
+  		align-items: center;
+  		text-align: center;
+		position: relative;}
+div.wrapper-top h2{font-size: 5rem;
+		position: relative;}
+div.wrapper-top h3{font-size: 2rem; text-align: center;
+	padding-top: 100px}
+div.wrapper-top2{position:relative;}
+	
+	h1.h1-overlay1{
+		position: absolute;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		font-size: 6.5rem;
+  		letter-spacing: -0.2rem;
+  		color: var(--yellow);
+  		z-index: 2}
+  	
+  	h1.h1-overlay2{
+  		position: absolute;
+  		left: 50%;
+  		transform: translate(-51%, -48%);
+  		font-size:7.3rem;
+  		letter-spacing: -0.85rem;
+  		color: var(--dpurple);
+  		z-index: 1}
+ .topimg1 {width:40%;
+ 	position: absolute;
+ 	top: 0px; left: -300px}
+ .topimg2 {width:33%;
+ 	position: absolute;
+ 	top: 200px; right: -300px;
+ 	animation: rotate 3s linear infinite alternate; /* 애니메이션을 적용 */
+  	transform-origin: bottom center;}
+ .topimg3 {width:50%;
+ 	position: absolute;
+ 	top: 400px; left: -300px}
+  
+  @keyframes rotate {
+  0% {
+    transform: rotate(-15deg); /* 0도 회전 */
+  }
+  100% {
+    transform: rotate(15deg); /* 360도 회전 */
+  }
+}
+/* ------------------------ */
+
+	div.first-button{text-align: center; height: 500px; padding-top: 200px;
+		padding-bottom: 140px;
+		z-index: 1}
+
+.ybutton{
+  background-color: var(--yellow);
+  padding: 14px 60px;
+  border: 2px solid; border-color: var(--purple);
+  border-radius: 60px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.wbutton{
+  background-color: white;
+  padding: 14px 60px;
+  border: 2px solid; border-color: var(--purple);
+  border-radius: 60px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.button-top{position: relative;}
+.bt1 { position: absolute;
+  top: 100px;
+  left: 38%;
+  z-index: 2;
+  width: 25%;
+}
+
+.bt2 { position: absolute;
+  top: 450px;
+  right: 30px;
+  z-index: 3;
+  width: 40%;
+}
+.bt3 { position: absolute;
+  top: 150px;
+  left: 40px;
+  z-index: 3;
+  width: 40%;
+}
+.bt4 { position: absolute;
+  top: 580px;
+  right: 360px;
+  z-index: 3;
+  width: 10%;
+  transform: rotate(-25deg);
+}
+
+/* ------------------------ */
+	div.tw1100{ height: 1300px;
+		display: flex;
+  		justify-content: center;}
+
+	div.tw700{width:650px; margin: 0 auto;}
+		h3{font-size: 2rem}
+
+	div.tt1-1{
+	  
+	  justify-content: center;
+	  align-items: center;
+	  width: 500px;
+	  height: 50px;
+	  border-radius: 100px;
+	  background-color: var(--purple);}
+
+
+	div.tt2{display: flex; align-items: flex-start;}
+	div.tt2 h1{text-align: right; padding-bottom: 5px;
+			font-size: 6rem;}
+		p{font-size: 1.5rem;
+				text-align: right;
+				position: relative;
+				right:0;
+				padding-top: 1vh}
+		h4{font-size: 0.9rem;
+			font-weight: 100;
+			color: var(--purple);
+			text-align: right;}
+
+	div.tt1, div.tt2, div.tt3 {width: 100%;text-align: center;
+		padding-top: 7vh;
+		}
+
+	div.tt2-c {display: flex; flex-direction: column; margin: 0;
+		margin-top: 50px;
+		text-align: center;}
+
+	div.tt3-c {display: flex; flex-direction: column; margin: 0;margin-top: 30px}
+
+	div.tt3 { display: flex;
+  			flex-direction: row;
+			margin-top: 50px}
+	div.tt3 h1{text-align: center;
+		font-size: 6rem;
+		align-self: flex-start;
+		}
+	div.tt3 p{font-size: 1.5rem;
+				text-align: center;
+				align-self: flex-start;
+				}
+	div.tt3 h4{font-size: 0.9rem;
+			font-weight: 100;
+			color: var(--purple);
+			text-align: left;
+			align-self: flex-start;}
+
+	.circle {
+	  width: 220px;
+	  height: 220px;
+	  border-radius: 50%;
+	  background-color: var(--purple);
+		flex-shrink: 0;
+	margin-top: 30px;
+}
+
+	.circle3 {
+	  width: 220px;
+	  height: 220px;
+	  border-radius: 50%;
+	  background-color: var(--purple);
+	margin-left: auto;
+  	align-self: flex-start;
+  	flex-shrink: 0;
+  	margin-top: 30px
+}
+/* ------------------------ */
+div.thw1100{ height: 1000px;
+		display: flex;
+  		justify-content: center;}
+
+div.tht1{width:700px; margin: 0 auto; text-align: center;}
+div.tht1 h1 {padding-top:15vh;
+		font-size: 7.5rem}
+div.tht1 h3 {color: var(--yellow);
+			line-height: 1.3;
+			padding-top: 3vh}
+
+.tht2 {padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+div.tht2 h1 {font-size: 3rem;
+		color: var(--yellow);
+		padding-bottom: 2vh}
+
+.tht2-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.circle4 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.tht2-c h3 {font-size: 1.5rem;
+font-weight: 500; color: var(--yellow);text-align: center;}
+.tht2-c p {color: white;
+	font-size: 1.2rem;
+	letter-spacing: -0.05rem;
+	text-align: center;}
+.tht2-c p.small {font-size: 0.8rem;text-align: center;
+	letter-spacing: 0rem; opacity: 0.66
+	;padding-top: 1vh; padding-bottom:3vh}
+button.tht2-b{
+  background-color: var(--yellow);
+  padding: 12px 60px;
+  border-radius: 60px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 3px solid;
+  border-color: var(--dpurple)}
+/* ------------------------ */
+
+div.fw1100 {height: 1150px;
+	align-items: center;
+	align-content: center;
+	}
+div.fw1100 {width:45%; margin-top: 100px}
+div.fw700 {width: 700px}
+
+.fw700 img {margin-top: 100px}
+/* ------------------------ */
+
+div.fiw1100 {height:820px}
+div.fiw700
+div.fit1{width:700px; margin: 0 auto; text-align: center;}
+div.fit1 h1 {padding-top:15vh;
+		font-size: 7.5rem}
+div.fit1 h3 {color: var(--purple);
+			line-height: 1.3;
+			padding-top: 3vh}
+
+.fit2 {padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+}
+
+.fit2-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-right: 1vw;
+padding-bottom: 1vw
+}
+
+.circle5 {
+  width: 150px;
+  height: 150px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+div.fit2-c h2 {font-size: 2rem;
+font-weight: 500; color: var(--purple);
+padding-top: 5vh;
+padding-bottom: 1.5vh}
+.fit2-c h3 {color: var(--purple);
+	font-size: 2rem;
+	letter-spacing: -0.05rem;
+	font-weight: 500}
+
+.fiw700 p {text-align: center;
+	color: var(--purple);
+	font-size: 1.3rem;
+	padding-top: 3vh}
+/* ------------------------ */
+div.sw1100{height: 750px}
+div.st1{width: 700px;
+	color: var(--yellow);
+	text-align: center;}
+	.st1 h1 {font-size: 4rem;
+		padding-top: 10vh}
+	.st1 h3 {font-size: 2.8rem;
+		padding-top: 1vh}
+	.st1 p{text-align: center;
+		font-size: 1.2rem}
+
+	.st2 {padding-top: 10vh}
+	.st2 h3 {text-align: center;
+		color: var(--yellow);
+		font-weight: 500;
+		font-size: 2.5rem}
+
+.st2-1 {width: 1100px; display: flex;
+	justify-content: space-between;}
+.st3 {margin-top: 50px;
+  width: 700px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: var(--yellow);
+  text-align: center;
+  padding-top:35px;
+  margin-right: 20px;
+}
+.sew700 h3 {text-align: center;
+		color: var(--purple);
+		font-weight: 500;
+		font-size: 2.5rem;
+		margin-top: 100px}
+div.st3 h3, p {color: var(--purple);}
+div.st3 h3 {font-size: 2rem}
+div.st3 p {text-align: center;line-height: 2rem;}
+
+.st4 {margin-top: 50px;
+  width: 700px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  padding-top:35px;
+   margin-right: 20px;
+}
+
+div.st4 h3 {color: var(--purple);}
+div.st4 h3 {font-size: 2rem}
+div.st4 p {text-align: center;line-height: 2rem;}
+
+
+div.sew1100{height: 300px}
+div.sew700{width:;
+	text-align: center}
+
+button.seb1 {align-items: center;
+		justify-content: center;
+		width: 180px;
+		height:60px;
+		border-radius: 50px;
+		margin-top: 30px;
+		background-color: white;
+		border: none;
+	}
+button.seb1:hover{  background-color: var(--purple);
+  color: var(--yellow);
+}}
+
+div.sew700 h3 {font-weight: 500;
+	color: var(--purple);
+	font-size: 2.5rem;
+padding-top: 50px}
+/* ------------------------ */
+div.ew1100 {height:480px;}
+div.ew700 {justify-content: center}
+div.et1{justify-content: center;text-align: center}
+div.et1 h3 {color: var(--yellow); font-weight: 500;
+	font-size: 1.5rem}
+div.et1 img {width: 500px;border-radius: 15px;
+	border-color: var(--yellow);
+	border: 2px solid var(--yellow);
+	padding: 10px;
+	margin-top:50px}
+/* ------------------------ */
+
+div.nw1100 {height: 500px;}
+div.nw700 {text-align: center }
+/* ------------------------ */
+
+div.tew1100{height: 400px; }
+div.st1 {text-align: center;
+}
+div.st1 h3, .st1 p {color: var(--yellow)}
+div.tew1100 h1, h3{color: var(--purple)}
+div.tew1100 h3{font-size: 2.5rem}
+div.st3 p, .st4 p {color: var(--purple)}
+div.tet1 {margin-top: -10px}
+div.tet1 h1, .tet1 h3 {color: var(--purple); text-align: center;}
+.tet1 h1 {font-size: 4rem;
+		padding-top: 10vh}
+	.tet1 h3 {font-size: 2.8rem;
+		padding-top: 1vh}
+	.tet1 p{text-align: center;
+		font-size: 1.2rem}
+.tet1 img {width: 15%; position: relative; top: 90px;
+	left: 350px}
+/* ------------------------ */
+div.elw1100{height: 500px}
+div.elw700{text-align: center}
+div.elw700 h4 {text-align: center;font-size: 1.5rem;}
+.elw700 h3 {font-weight: 500;
+color: var(--purpler)}
+/* ------------------------ */
+div.tkwjsw1100 {height:250px; text-align: center; color: var(--yellow)}
+div.tkwjst1 p {margin-top: 50px; text-align: center; color: var(--yellow);}
+div.tkwjst1 h3 {text-align: center; color: var(--yellow); font-size: 1.5rem;margin-top: 20px}
+/* ------------------------ */
+.tww700 {height: 1500px;
+	display: flex; align-items: center;	justify-content: center;
+flex-direction: column;}
+
+.tww700 h3 {width: 450px; font-weight: 500; font-size: 1.5rem; position: relative;
+	margin-top:100px;
+background-color: white;
+text-align: center; border: 3px solid var(--dpurple); border-radius: 15px}
+.tww700 h4 {color: var(--dpurple); margin-bottom:-10px; font-size: 1.5rem}
+.tww700 h2 {color: var(--purple); margin-bottom: 10px; text-align: center}
+/* ------------------------ */
+div.lv31100{height: 400px}
+/* ------------------------ */
+
+div.last1100{height: 200px}
+/* ------------------------ */
+div.dyddj1100{height: 800px; text-align: center}
+div.dyddj1100 h1 {color: var(--yellow); padding-top: 50px}
+div.dyddj1100 h4{color: var(--yellow); text-align: center;
+	font-size: 1.5rem}
+div.dyddj1100 h3 {color: var(--yellow); font-weight: 500}
+div.second-button{margin-top: 20px}
+
+
+/* ------------------------ */
+strong{font-weight: 500}
+
+
+section.lightpurple {background-color: white;
+	}
+
+section.whitebg {
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+}
+section.yellowbg {
+  background-color: var(--yellow);
+  width: 100%;overflow: hidden;
+}
+
+section.purplebg {
+  background-color: var(--purple);
+  width: 100%;
+overflow: hidden}
+
+.purpletext {color:var(--purple);}
+.dpurpletext {color:var(--dpurple);}
+.yellow {color:var(--yellow)}
+.highlight-p{color:var(--purple)}
+.highlight-y{color:var(--yellow)}
+
+:root {
+	 --purple:  #682fe5;
+	 --dpurple: #47246c;
+	 --yellow: #fdfd47;
+	}
+
+
+
+</style>
